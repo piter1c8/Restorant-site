@@ -1,14 +1,19 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Layout } from "@/components/layout/Layout";
+import { AboutSection } from "@/components/sections/AboutSection";
+import { AdvantagesSection } from "@/components/sections/AdvantagesSection";
+import { BookingSection } from "@/components/sections/BookingSection";
+import { ContactsSection } from "@/components/sections/ContactsSection";
+import { CTASection } from "@/components/sections/CTASection";
+import { FAQSection } from "@/components/sections/FAQSection";
+import { GallerySection } from "@/components/sections/GallerySection";
+import { HeroSection } from "@/components/sections/HeroSection";
+import { PricingSection } from "@/components/sections/PricingSection";
+import { ProcessSection } from "@/components/sections/ProcessSection";
+import { ReviewsSection } from "@/components/sections/ReviewsSection";
+import { ServicesSection } from "@/components/sections/ServicesSection";
+import { StatsSection } from "@/components/sections/StatsSection";
+import { TeamSection } from "@/components/sections/TeamSection";
 
-const Index = () => {
-  return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
-      </div>
-    </div>
-  );
-};
-
-export default Index;
+export default function Index() {
+  return <Layout><HeroSection /><StatsSection /><ServicesSection /><AdvantagesSection /><AboutSection /><PricingSection /><ProcessSection /><GallerySection /><BookingSection /><TeamSection /><ReviewsSection /><FAQSection /><ContactsSection /><CTASection /></Layout>;
+}
